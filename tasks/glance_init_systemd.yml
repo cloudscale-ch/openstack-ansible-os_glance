@@ -40,7 +40,6 @@
     group: "root"
   with_items: "{{ filtered_glance_services }}"
   notify:
-    - Manage LB
     - Restart glance services
 
 - name: Place the systemd init script
@@ -54,5 +53,4 @@
     config_type: "ini"
   with_items: "{{ filtered_glance_services }}"
   notify:
-    - Manage LB
     - Restart glance services

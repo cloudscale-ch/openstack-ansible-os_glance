@@ -29,5 +29,4 @@
   with_items: "{{ filtered_glance_services }}"
   when: item.wsgi_app | default(False)
   notify:
-    - Manage LB
     - Restart glance services

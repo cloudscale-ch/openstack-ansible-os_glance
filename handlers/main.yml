@@ -114,7 +114,3 @@
   retries: 5
   delay: 2
   listen: "Restart glance services"
-
-- meta: noop
-  listen: Manage LB
-  when: false
