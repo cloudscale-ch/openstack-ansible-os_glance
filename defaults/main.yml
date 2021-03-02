@@ -265,7 +265,7 @@ glance_services:
     service_name: glance-api
     init_config_overrides: "{{ glance_api_init_overrides }}"
     start_order: 1
-    execstarts: "{{ _glance_bin }}/glance-api --log-file=/var/log/glance/glance-api.log"
+    execstarts: "{{ _glance_bin }}/glance-api"
   glance-registry:
     group: glance_registry
     service_name: glance-registry
